@@ -11,7 +11,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-
 public class DeckTest {
 
 	@BeforeClass
@@ -31,9 +30,24 @@ public class DeckTest {
 	}
 
 	@Test
-	public void BuildDeck(){	
+	public void TestBuildDeck() {
+		Deck d1 = new Deck();
+		assertEquals(d1.DeckSize(), 52);
 	}
 
-	public void DeckOverDraw()  {
+	@Test
+	public void TestDrawFromDeck() {
+		Deck d2 = new Deck();
+		d2.Draw();
+		assertEquals(d2.DeckSize(), 51);
+	}
+
+	@Test
+	public void TestThriceDrawFromDeck() {
+		Deck d2 = new Deck();
+		d2.Draw();
+		d2.Draw();
+		d2.Draw();
+		assertEquals(d2.DeckSize(), 49);
 	}
 }

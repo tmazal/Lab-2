@@ -1,6 +1,13 @@
 package pokerBase;
 
 import java.util.Comparator;
+
+/*
+ * Tobias Mazal, Quinn Wexler
+ * CISC181010, Lab 2 - Poker
+ * 9/26/2016
+ */
+
 import pokerEnums.eRank;
 import pokerEnums.eSuit;
 
@@ -16,7 +23,6 @@ public class Card implements Comparable<Object> {
 		this.iCardNbr = iCardNbr;
 	}
 
-	
 	public void seteSuit(eSuit eSuit) {
 		this.eSuit = eSuit;
 	}
