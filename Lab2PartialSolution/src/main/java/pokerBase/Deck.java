@@ -10,7 +10,7 @@ public class Deck {
 	private ArrayList<Card> deckCards = new ArrayList<Card>();
 
 	public Deck() { // Makes a deck
-		int iCardNbr = 1;
+		int iCardNbr = 0;
 		for (eSuit eSuit : eSuit.values()) { // Uses a for loop to add cards of all needed suits, ranks
 			for (eRank eRank : eRank.values()) {
 				deckCards.add(new Card(eSuit, eRank, iCardNbr++));
