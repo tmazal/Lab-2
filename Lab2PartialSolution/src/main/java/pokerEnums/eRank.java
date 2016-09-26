@@ -1,8 +1,7 @@
 package pokerEnums;
 
-import javax.xml.bind.annotation.XmlElement;
-
 public enum eRank {
+	ZERO(0),
 	TWO(2), 
 	THREE(3), 
 	FOUR(4), 
@@ -23,9 +22,12 @@ public enum eRank {
 		this.iRankNbr = iRankNbr;
 	}
 
-	@XmlElement
 	public int getiRankNbr() {
 		return iRankNbr;
+	}
+
+	public void setiRankNbr(int iRankNbr) {
+		this.iRankNbr = iRankNbr;
 	}
 
 

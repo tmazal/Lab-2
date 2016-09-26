@@ -14,6 +14,10 @@ public enum eSuit {
 	public int getiSuitNbr() {
 		return iSuitNbr;
 	}
+
+	public void setiSuitNbr(int iSuitNbr) {
+		this.iSuitNbr = iSuitNbr;
+	}
 	
 	
 }

@@ -1,23 +1,43 @@
 package pokerBase;
 
-
 import java.util.Comparator;
-
 import pokerEnums.eRank;
 import pokerEnums.eSuit;
 
-public class Card  implements Comparable {
+public class Card implements Comparable<Object> {
 
 	private eSuit eSuit;
 	private eRank eRank;
 	private int iCardNbr;
-	public Card(pokerEnums.eSuit eSuit, pokerEnums.eRank eRank, int iCardNbr) {
+	//private int Suit;
+	//private int Rank;
+	public Card(eSuit eSuit, eRank eRank, int iCardNbr) {
 		super();
 		this.eSuit = eSuit;
 		this.eRank = eRank;
 		this.iCardNbr = iCardNbr;
 	}
 	
+	/*
+	public Card(int Suit, int Rank, int iCardNbr){
+		this.Suit = Suit;
+		this.Rank = Rank;
+		this.iCardNbr = iCardNbr;
+	}
+	*/
+	
+	public void seteSuit(eSuit eSuit) {
+		this.eSuit = eSuit;
+	}
+
+	public void seteRank(eRank eRank) {
+		this.eRank = eRank;
+	}
+
+	public void setiCardNbr(int iCardNbr) {
+		this.iCardNbr = iCardNbr;
+	}
+
 	public eSuit geteSuit() {
 		return eSuit;
 	}
@@ -36,10 +56,8 @@ public class Card  implements Comparable {
 
 		   int Cno1 = c1.geteRank().getiRankNbr();
 		   int Cno2 = c2.geteRank().getiRankNbr();
-
 		   /*For descending order*/
 		   return Cno2 - Cno1;
-
 	   }};
 	   
 	public int compareTo(Object o) {
@@ -48,5 +66,4 @@ public class Card  implements Comparable {
 
 	}
 
-	
 }
