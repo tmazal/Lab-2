@@ -25,7 +25,7 @@ public class Hand {
 	public HandScore getHandScore() {
 		return HS;
 	}
-		
+	
 	public void EvalHand(){
 		Card FirstCard = CardsInHand.get(0);
 		Card SecondCard = CardsInHand.get(1);

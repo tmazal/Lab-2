@@ -9,22 +9,13 @@ public class Card implements Comparable<Object> {
 	private eSuit eSuit;
 	private eRank eRank;
 	private int iCardNbr;
-	//private int Suit;
-	//private int Rank;
 	public Card(eSuit eSuit, eRank eRank, int iCardNbr) {
 		super();
 		this.eSuit = eSuit;
 		this.eRank = eRank;
 		this.iCardNbr = iCardNbr;
 	}
-	
-	/*
-	public Card(int Suit, int Rank, int iCardNbr){
-		this.Suit = Suit;
-		this.Rank = Rank;
-		this.iCardNbr = iCardNbr;
-	}
-	*/
+
 	
 	public void seteSuit(eSuit eSuit) {
 		this.eSuit = eSuit;
@@ -45,7 +36,7 @@ public class Card implements Comparable<Object> {
 	public eRank geteRank() {
 		return eRank;
 	}
-
+	
 	public int getiCardNbr() {
 		return iCardNbr;
 	}

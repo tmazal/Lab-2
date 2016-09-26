@@ -15,12 +15,12 @@ public enum eHandStrength {
 	HighCard(10);
 
 	private int iHandStrength;
-	
+
 	private eHandStrength(final int handstrength) {
 		this.iHandStrength = handstrength;
 	}
-
-	public int getHandStrength() {
+	
+	public int getiHandStrength() {
 		return iHandStrength;
 	}
 
